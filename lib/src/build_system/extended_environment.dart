@@ -38,7 +38,7 @@ class ExtendedEnvironment implements Environment {
         artifacts: artifacts,
         processManager: processManager,
         platform: platform,
-        usage: usage,
+        // logger: usage,
         analytics: analytics,
         engineVersion: engineVersion,
         generateDartPluginRegistry: generateDartPluginRegistry,
@@ -110,8 +110,8 @@ class ExtendedEnvironment implements Environment {
   @override
   Directory get rootBuildDir => _delegate.rootBuildDir;
 
-  @override
-  Usage get usage => _delegate.usage;
+  // @override
+  // Usage get usage => _delegate.usage;
 
   final MoreOperatingSystemUtils operatingSystemUtils;
 }
